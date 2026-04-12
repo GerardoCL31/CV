@@ -1,0 +1,255 @@
+:root {
+  color-scheme: light;
+  color: #1f2937;
+  background: #eaf2f8;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #d8e8f8 0%, #eaf2f8 100%);
+}
+
+.cv-container {
+  max-width: 1040px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.hero {
+  background: #4c7fc3;
+  border-radius: 24px 24px 16px 16px;
+  color: white;
+  padding: 2rem 2rem 1.75rem;
+  text-align: center;
+  box-shadow: 0 16px 40px rgba(49, 88, 143, 0.18);
+  margin-bottom: 40px;
+}
+
+.hero__text {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 720px;
+  width: 100%;
+}
+
+.hero__subtitle {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3.3rem);
+  letter-spacing: -0.04em;
+  font-weight: 800;
+}
+
+.hero__link {
+  margin: 0.85rem 0 0;
+}
+
+.hero__link a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.85rem 1.25rem;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.32);
+  border-radius: 999px;
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.hero__link a:hover {
+  background: rgba(255, 255, 255, 0.28);
+  transform: translateY(-1px);
+}
+
+.content {
+  margin-top: -1.25rem;
+}
+
+.top-card {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 1.5rem;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 24px;
+  padding: 1.75rem;
+  box-shadow: 0 14px 32px rgba(31, 41, 55, 0.08);
+}
+
+.photo {
+  min-height: 260px;
+  border-radius: 24px;
+  background: linear-gradient(135deg, #c7d8ed 0%, #eef5fb 100%);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.intro h1,
+.box h2 {
+  margin: 0 0 1rem;
+  font-size: 1.45rem;
+  color: #1f2937;
+}
+
+.intro p {
+  margin: 0;
+  line-height: 1.8;
+  color: #334155;
+}
+
+.section {
+  margin-top: 1.5rem;
+}
+
+.grid-two {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.box {
+  background: white;
+  border-radius: 24px;
+  padding: 1.5rem;
+  box-shadow: 0 12px 28px rgba(31, 41, 55, 0.06);
+}
+
+.item {
+  margin-bottom: 1.25rem;
+}
+
+.item:last-child {
+  margin-bottom: 0;
+}
+
+.item h3 {
+  margin: 0 0 0.35rem;
+  font-size: 1.05rem;
+}
+
+.item p,
+.item span,
+.skills-list li,
+.languages-list li {
+  margin: 0;
+  color: #475569;
+  line-height: 1.65;
+}
+
+.item span {
+  display: block;
+  margin-top: 0.45rem;
+  color: #64748b;
+  font-size: 0.95rem;
+}
+
+.item ul {
+  padding-left: 1.15rem;
+  margin: 0.75rem 0 0;
+}
+
+.item ul li {
+  margin-bottom: 0.5rem;
+}
+
+.skills-list,
+.languages-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills-list li,
+.languages-list li {
+  position: relative;
+  padding-left: 1.35rem;
+  margin-bottom: 0.85rem;
+}
+
+.skills-list li::before,
+.languages-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #4c7fc3;
+}
+
+.footer {
+  margin-top: 1.5rem;
+  padding: 1.25rem 1.5rem;
+  border-radius: 24px;
+  background: #4c7fc3;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  text-align: center;
+}
+
+.footer span {
+  display: block;
+  font-weight: 600;
+}
+
+@media (max-width: 860px) {
+  .top-card,
+  .grid-two,
+  .footer {
+    grid-template-columns: 1fr;
+  }
+
+  .hero__link a {
+    width: min(220px, 100%);
+  }
+}
+
+@media (max-width: 520px) {
+  .cv-container {
+    margin: 1rem;
+    padding: 0.5rem;
+  }
+
+  .hero {
+    padding: 1.25rem 1rem 0.9rem;
+    border-radius: 24px 24px 0 0;
+  }
+
+  .content {
+    margin-top: -1.6rem;
+  }
+
+  .hero__text {
+    padding: 0 0.5rem;
+  }
+
+  .top-card {
+    padding: 1.25rem;
+    gap: 1rem;
+  }
+
+  .photo {
+    min-height: 220px;
+  }
+
+  .footer {
+    text-align: left;
+  }
+}
