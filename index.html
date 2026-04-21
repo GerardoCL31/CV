@@ -3,17 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Resume | Gerardo Corona Lopez</title>
+    <title data-i18n="meta.title">Resume | Gerardo Corona Lopez</title>
     <link rel="icon" type="image/png" href="favicon.png" />
     <link rel="stylesheet" href="styles.css" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
   </head>
   <body>
     <div class="cv-container">
       <header class="hero">
         <div class="hero__text">
           <div class="hero__card">
+            <div class="hero__controls">
+              <button class="hero__control" id="theme-toggle" type="button" data-i18n="controls.theme">
+                Dark mode
+              </button>
+              <button class="hero__control" id="lang-toggle" type="button" data-i18n="controls.lang">ES</button>
+            </div>
             <p class="hero__subtitle">Gerardo Corona Lopez</p>
-            <a class="hero__button" href="https://porfolio.gerardocorona.io/" target="_blank" rel="noopener noreferrer">PORTFOLIO</a>
+            <a
+              class="hero__button"
+              href="https://porfolio.gerardocorona.io/"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-i18n="hero.portfolio"
+            >
+              PORTFOLIO
+            </a>
           </div>
         </div>
       </header>
@@ -24,8 +42,8 @@
             <img src="foto.PNG" alt="Photo of Gerardo Corona Lopez" />
           </div>
           <div class="intro">
-            <h1>Professional Profile</h1>
-            <p>
+            <h1 data-i18n="profile.title">Professional Profile</h1>
+            <p data-i18n="profile.body">
               Web developer in training with previous experience in telecommunications, used to solving technical
               problems and working in demanding environments. Currently studying a Higher Degree in Web Application
               Development (DAW), with a focus on full-stack development.
@@ -35,30 +53,30 @@
 
         <section class="section">
           <div class="box">
-            <h2>Featured Projects</h2>
+            <h2 data-i18n="projects.title">Featured Projects</h2>
             <div class="item">
-              <h3>Personal Portfolio</h3>
+              <h3 data-i18n="projects.portfolio.title">Personal Portfolio</h3>
               <p>porfolio.gerardocorona.io</p>
               <ul>
-                <li>Development of web applications using JavaScript and Java.</li>
-                <li>Implementation of dynamic features and business logic.</li>
-                <li>Database integration and management with SQL and MongoDB.</li>
-                <li>Responsive web interface design.</li>
+                <li data-i18n="projects.portfolio.item1">Development of web applications using JavaScript and Java.</li>
+                <li data-i18n="projects.portfolio.item2">Implementation of dynamic features and business logic.</li>
+                <li data-i18n="projects.portfolio.item3">Database integration and management with SQL and MongoDB.</li>
+                <li data-i18n="projects.portfolio.item4">Responsive web interface design.</li>
               </ul>
             </div>
             <div class="item">
-              <h3>CRUD Web Application</h3>
+              <h3 data-i18n="projects.crud.title">CRUD Web Application</h3>
               <ul>
-                <li>Data management with full create, read, update, and delete operations.</li>
-                <li>Database connection and data persistence.</li>
-                <li>Interactive user interface.</li>
+                <li data-i18n="projects.crud.item1">Data management with full create, read, update, and delete operations.</li>
+                <li data-i18n="projects.crud.item2">Database connection and data persistence.</li>
+                <li data-i18n="projects.crud.item3">Interactive user interface.</li>
               </ul>
             </div>
             <div class="item">
-              <h3>Interactive Web Project</h3>
+              <h3 data-i18n="projects.interactive.title">Interactive Web Project</h3>
               <ul>
-                <li>Use of JavaScript for DOM manipulation.</li>
-                <li>Responsive design and user experience improvements.</li>
+                <li data-i18n="projects.interactive.item1">Use of JavaScript for DOM manipulation.</li>
+                <li data-i18n="projects.interactive.item2">Responsive design and user experience improvements.</li>
               </ul>
             </div>
           </div>
@@ -66,53 +84,53 @@
 
         <section class="section grid-two">
           <div class="box">
-            <h2>Education</h2>
+            <h2 data-i18n="education.title">Education</h2>
             <div class="item">
-              <h3>Higher Degree in Web Application Development (DAW)</h3>
-              <p>CEI - Seville</p>
-              <span>2024 - 2026 (In progress)</span>
+              <h3 data-i18n="education.daw.title">Higher Degree in Web Application Development (DAW)</h3>
+              <p data-i18n="education.daw.place">CEI - Seville</p>
+              <span data-i18n="education.daw.date">2024 - 2026 (In progress)</span>
             </div>
             <div class="item">
-              <h3>Higher Degree in Electronic Maintenance</h3>
-              <p>IES Heliopolis - Seville</p>
+              <h3 data-i18n="education.electronics.title">Higher Degree in Electronic Maintenance</h3>
+              <p data-i18n="education.electronics.place">IES Heliopolis - Seville</p>
               <span>2021</span>
             </div>
             <div class="item">
-              <h3>Baccalaureate</h3>
-              <p>IES Ruiz Gijon - Utrera</p>
+              <h3 data-i18n="education.bach.title">Baccalaureate</h3>
+              <p data-i18n="education.bach.place">IES Ruiz Gijon - Utrera</p>
               <span>2019</span>
             </div>
           </div>
 
           <div class="box">
-            <h2>Experience</h2>
+            <h2 data-i18n="experience.title">Experience</h2>
             <div class="item">
               <h3>ArchTech</h3>
-              <p>Web Development Internship (FCT - 500 hours)</p>
+              <p data-i18n="experience.archtech.role">Web Development Internship (FCT - 500 hours)</p>
               <ul>
-                <li>Work in a professional web development environment.</li>
-                <li>Application of best practices and teamwork.</li>
-                <li>Participation in projects using modern web technologies.</li>
+                <li data-i18n="experience.archtech.item1">Work in a professional web development environment.</li>
+                <li data-i18n="experience.archtech.item2">Application of best practices and teamwork.</li>
+                <li data-i18n="experience.archtech.item3">Participation in projects using modern web technologies.</li>
               </ul>
             </div>
             <div class="item">
               <h3>Claro Telecomunicaciones</h3>
               <p>San Jose de la Rinconada</p>
-              <span>Fiber Optic Installer | July 2022 - April 2024</span>
+              <span data-i18n="experience.claro.role">Fiber Optic Installer | July 2022 - April 2024</span>
               <ul>
-                <li>Installation and splicing of fiber optic lines in homes.</li>
-                <li>Resolution of technical incidents.</li>
-                <li>Work at height.</li>
+                <li data-i18n="experience.claro.item1">Installation and splicing of fiber optic lines in homes.</li>
+                <li data-i18n="experience.claro.item2">Resolution of technical incidents.</li>
+                <li data-i18n="experience.claro.item3">Work at height.</li>
               </ul>
             </div>
             <div class="item">
               <h3>Mena2sistemas</h3>
               <p>Las Cabezas de San Juan</p>
-              <span>Telecommunications Installer | September 2021 - July 2022</span>
+              <span data-i18n="experience.mena.role">Telecommunications Installer | September 2021 - July 2022</span>
               <ul>
-                <li>Installation of internet connections and TV antennas.</li>
-                <li>Technical support and customer service.</li>
-                <li>Diagnosis and resolution of technical faults.</li>
+                <li data-i18n="experience.mena.item1">Installation of internet connections and TV antennas.</li>
+                <li data-i18n="experience.mena.item2">Technical support and customer service.</li>
+                <li data-i18n="experience.mena.item3">Diagnosis and resolution of technical faults.</li>
               </ul>
             </div>
           </div>
@@ -120,28 +138,59 @@
 
         <section class="section grid-two">
           <div class="box">
-            <h2>Skills</h2>
+            <h2 data-i18n="skills.title">Skills</h2>
             <ul class="skills-list">
-              <li>Frontend: HTML, CSS, JavaScript, responsive design</li>
-              <li>Backend: Java, business logic, CRUD operations</li>
-              <li>Databases: SQL, MongoDB</li>
-              <li>Tools and workflow: Git, teamwork, technical problem solving</li>
+              <li data-i18n="skills.item1">Frontend: HTML, CSS, JavaScript, responsive design</li>
+              <li data-i18n="skills.item2">Backend: Java, business logic, CRUD operations</li>
+              <li data-i18n="skills.item3">Databases: SQL, MongoDB</li>
+              <li data-i18n="skills.item4">Tools and workflow: Git, teamwork, technical problem solving</li>
             </ul>
           </div>
 
           <div class="box">
-            <h2>Languages</h2>
+            <h2 data-i18n="languages.title">Languages</h2>
             <ul class="languages-list">
-              <li>Spanish: Native</li>
-              <li>English: Basic</li>
+              <li data-i18n="languages.item1">Spanish: Native</li>
+              <li data-i18n="languages.item2">English: Basic</li>
             </ul>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="contact-card">
+            <div class="contact-card__intro">
+              <h2 data-i18n="contact.title">Contact Me</h2>
+              <p data-i18n="contact.body">
+                If you want to talk about a job opportunity, a collaboration, or any project, send me a message here.
+              </p>
+            </div>
+            <form class="contact-form" id="contact-form">
+              <label class="contact-form__field">
+                <span data-i18n="contact.name">Name</span>
+                <input id="contact-name" name="name" type="text" required />
+              </label>
+              <label class="contact-form__field">
+                <span data-i18n="contact.email">Email</span>
+                <input id="contact-email" name="email" type="email" required />
+              </label>
+              <label class="contact-form__field contact-form__field--full">
+                <span data-i18n="contact.subject">Subject</span>
+                <input id="contact-subject" name="title" type="text" required />
+              </label>
+              <label class="contact-form__field contact-form__field--full">
+                <span data-i18n="contact.message">Message</span>
+                <textarea id="contact-message" name="message" rows="6" required></textarea>
+              </label>
+              <button class="contact-form__button" type="submit" data-i18n="contact.submit">Send message</button>
+              <p class="contact-form__status" id="contact-status" data-i18n="contact.statusIdle"></p>
+            </form>
           </div>
         </section>
       </main>
 
       <footer class="footer">
         <div>
-          <span>Seville, Spain</span>
+          <span data-i18n="footer.location">Seville, Spain</span>
         </div>
         <div>
           <span>664 27 92 12</span>
@@ -151,5 +200,223 @@
         </div>
       </footer>
     </div>
+    <script>
+      const translations = {
+        en: {
+          "meta.title": "Resume | Gerardo Corona Lopez",
+          "controls.theme": "Dark mode",
+          "controls.lang": "ES",
+          "hero.portfolio": "PORTFOLIO",
+          "profile.title": "Professional Profile",
+          "profile.body":
+            "Web developer in training with previous experience in telecommunications, used to solving technical problems and working in demanding environments. Currently studying a Higher Degree in Web Application Development (DAW), with a focus on full-stack development.",
+          "projects.title": "Featured Projects",
+          "projects.portfolio.title": "Personal Portfolio",
+          "projects.portfolio.item1": "Development of web applications using JavaScript and Java.",
+          "projects.portfolio.item2": "Implementation of dynamic features and business logic.",
+          "projects.portfolio.item3": "Database integration and management with SQL and MongoDB.",
+          "projects.portfolio.item4": "Responsive web interface design.",
+          "projects.crud.title": "CRUD Web Application",
+          "projects.crud.item1": "Data management with full create, read, update, and delete operations.",
+          "projects.crud.item2": "Database connection and data persistence.",
+          "projects.crud.item3": "Interactive user interface.",
+          "projects.interactive.title": "Interactive Web Project",
+          "projects.interactive.item1": "Use of JavaScript for DOM manipulation.",
+          "projects.interactive.item2": "Responsive design and user experience improvements.",
+          "education.title": "Education",
+          "education.daw.title": "Higher Degree in Web Application Development (DAW)",
+          "education.daw.place": "CEI - Seville",
+          "education.daw.date": "2024 - 2026 (In progress)",
+          "education.electronics.title": "Higher Degree in Electronic Maintenance",
+          "education.electronics.place": "IES Heliopolis - Seville",
+          "education.bach.title": "Baccalaureate",
+          "education.bach.place": "IES Ruiz Gijon - Utrera",
+          "experience.title": "Experience",
+          "experience.archtech.role": "Web Development Internship (FCT - 500 hours)",
+          "experience.archtech.item1": "Work in a professional web development environment.",
+          "experience.archtech.item2": "Application of best practices and teamwork.",
+          "experience.archtech.item3": "Participation in projects using modern web technologies.",
+          "experience.claro.role": "Fiber Optic Installer | July 2022 - April 2024",
+          "experience.claro.item1": "Installation and splicing of fiber optic lines in homes.",
+          "experience.claro.item2": "Resolution of technical incidents.",
+          "experience.claro.item3": "Work at height.",
+          "experience.mena.role": "Telecommunications Installer | September 2021 - July 2022",
+          "experience.mena.item1": "Installation of internet connections and TV antennas.",
+          "experience.mena.item2": "Technical support and customer service.",
+          "experience.mena.item3": "Diagnosis and resolution of technical faults.",
+          "skills.title": "Skills",
+          "skills.item1": "Frontend: HTML, CSS, JavaScript, responsive design",
+          "skills.item2": "Backend: Java, business logic, CRUD operations",
+          "skills.item3": "Databases: SQL, MongoDB",
+          "skills.item4": "Tools and workflow: Git, teamwork, technical problem solving",
+          "languages.title": "Languages",
+          "languages.item1": "Spanish: Native",
+          "languages.item2": "English: Basic",
+          "contact.title": "Contact Me",
+          "contact.body":
+            "If you want to talk about a job opportunity, a collaboration, or any project, send me a message here.",
+          "contact.name": "Name",
+          "contact.email": "Email",
+          "contact.subject": "Subject",
+          "contact.message": "Message",
+          "contact.submit": "Send message",
+          "contact.statusIdle": "",
+          "contact.statusSending": "Sending message...",
+          "contact.statusSuccess": "Message sent successfully.",
+          "contact.statusError": "The message could not be sent. Please try again later.",
+          "footer.location": "Seville, Spain"
+        },
+        es: {
+          "meta.title": "CV | Gerardo Corona Lopez",
+          "controls.theme": "Modo oscuro",
+          "controls.lang": "EN",
+          "hero.portfolio": "PORTFOLIO",
+          "profile.title": "Perfil profesional",
+          "profile.body":
+            "Desarrollador web en formación con experiencia previa en telecomunicaciones, acostumbrado a resolver problemas técnicos y trabajar en entornos exigentes. Actualmente cursando un Grado Superior en Desarrollo de Aplicaciones Web (DAW), con enfoque en desarrollo full-stack.",
+          "projects.title": "Proyectos destacados",
+          "projects.portfolio.title": "Portfolio personal",
+          "projects.portfolio.item1": "Desarrollo de aplicaciones web usando JavaScript y Java.",
+          "projects.portfolio.item2": "Implementación de funcionalidades dinámicas y lógica de negocio.",
+          "projects.portfolio.item3": "Integración y gestión de bases de datos con SQL y MongoDB.",
+          "projects.portfolio.item4": "Diseño de interfaces web responsive.",
+          "projects.crud.title": "Aplicación web CRUD",
+          "projects.crud.item1": "Gestión de datos con operaciones completas de alta, lectura, edición y borrado.",
+          "projects.crud.item2": "Conexión con base de datos y persistencia de datos.",
+          "projects.crud.item3": "Interfaz de usuario interactiva.",
+          "projects.interactive.title": "Proyecto web interactivo",
+          "projects.interactive.item1": "Uso de JavaScript para manipulación del DOM.",
+          "projects.interactive.item2": "Diseño responsive y mejoras en experiencia de usuario.",
+          "education.title": "Educación",
+          "education.daw.title": "Grado Superior en Desarrollo de Aplicaciones Web (DAW)",
+          "education.daw.place": "CEI - Sevilla",
+          "education.daw.date": "2024 - 2026 (En curso)",
+          "education.electronics.title": "Grado Superior en Mantenimiento Electrónico",
+          "education.electronics.place": "IES Heliopolis - Sevilla",
+          "education.bach.title": "Bachillerato",
+          "education.bach.place": "IES Ruiz Gijon - Utrera",
+          "experience.title": "Experiencia",
+          "experience.archtech.role": "Prácticas de desarrollo web (FCT - 500 horas)",
+          "experience.archtech.item1": "Trabajo en un entorno profesional de desarrollo web.",
+          "experience.archtech.item2": "Aplicación de buenas prácticas y trabajo en equipo.",
+          "experience.archtech.item3": "Participación en proyectos con tecnologías web modernas.",
+          "experience.claro.role": "Instalador de fibra óptica | Julio 2022 - Abril 2024",
+          "experience.claro.item1": "Instalación y empalme de líneas de fibra óptica en viviendas.",
+          "experience.claro.item2": "Resolución de incidencias técnicas.",
+          "experience.claro.item3": "Trabajo en altura.",
+          "experience.mena.role": "Instalador de telecomunicaciones | Septiembre 2021 - Julio 2022",
+          "experience.mena.item1": "Instalación de conexiones a internet y antenas de TV.",
+          "experience.mena.item2": "Soporte técnico y atención al cliente.",
+          "experience.mena.item3": "Diagnóstico y resolución de averías técnicas.",
+          "skills.title": "Habilidades",
+          "skills.item1": "Frontend: HTML, CSS, JavaScript, diseño responsive",
+          "skills.item2": "Backend: Java, lógica de negocio, operaciones CRUD",
+          "skills.item3": "Bases de datos: SQL, MongoDB",
+          "skills.item4": "Herramientas y flujo de trabajo: Git, trabajo en equipo, resolución de problemas técnicos",
+          "languages.title": "Idiomas",
+          "languages.item1": "Español: Nativo",
+          "languages.item2": "Inglés: Básico",
+          "contact.title": "Contacto",
+          "contact.body":
+            "Si quieres hablar sobre una oportunidad laboral, una colaboración o cualquier proyecto, envíame un mensaje desde aquí.",
+          "contact.name": "Nombre",
+          "contact.email": "Correo electrónico",
+          "contact.subject": "Asunto",
+          "contact.message": "Mensaje",
+          "contact.submit": "Enviar mensaje",
+          "contact.statusIdle": "",
+          "contact.statusSending": "Enviando mensaje...",
+          "contact.statusSuccess": "Mensaje enviado correctamente.",
+          "contact.statusError": "No se pudo enviar el mensaje. Inténtalo de nuevo más tarde.",
+          "footer.location": "Sevilla, España"
+        }
+      };
+
+      const EMAILJS_PUBLIC_KEY = "4oFaJ2wx3K7uW-q2i";
+      const EMAILJS_SERVICE_ID = "service_y8mceb7";
+      const EMAILJS_TEMPLATE_ID = "template_fbslkbp";
+
+      const root = document.documentElement;
+      const themeToggle = document.getElementById("theme-toggle");
+      const langToggle = document.getElementById("lang-toggle");
+      const contactForm = document.getElementById("contact-form");
+      const contactStatus = document.getElementById("contact-status");
+      const savedTheme = localStorage.getItem("theme") || "light";
+      const savedLang = localStorage.getItem("lang") || "en";
+
+      function applyTheme(theme) {
+        root.dataset.theme = theme;
+        localStorage.setItem("theme", theme);
+      }
+
+      function applyLanguage(lang) {
+        document.documentElement.lang = lang;
+        localStorage.setItem("lang", lang);
+        document.querySelectorAll("[data-i18n]").forEach((element) => {
+          const key = element.dataset.i18n;
+          const value = translations[lang][key];
+          if (!value) return;
+          if (element.tagName === "TITLE") {
+            document.title = value;
+            return;
+          }
+          element.textContent = value;
+        });
+      }
+
+      function setContactStatus(key, state, fallbackText = "") {
+        contactStatus.textContent = translations[document.documentElement.lang][key] || fallbackText;
+        contactStatus.dataset.state = state || "";
+      }
+
+      if (window.emailjs && EMAILJS_PUBLIC_KEY) {
+        emailjs.init({
+          publicKey: EMAILJS_PUBLIC_KEY
+        });
+      }
+
+      themeToggle.addEventListener("click", () => {
+        const nextTheme = root.dataset.theme === "dark" ? "light" : "dark";
+        applyTheme(nextTheme);
+      });
+
+      langToggle.addEventListener("click", () => {
+        const nextLang = document.documentElement.lang === "es" ? "en" : "es";
+        applyLanguage(nextLang);
+      });
+
+      contactForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+        if (
+          !window.emailjs ||
+          !EMAILJS_PUBLIC_KEY ||
+          !EMAILJS_SERVICE_ID ||
+          !EMAILJS_TEMPLATE_ID
+        ) {
+          setContactStatus("contact.statusError", "error");
+          return;
+        }
+
+        setContactStatus("contact.statusSending", "sending");
+
+        emailjs
+          .sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, contactForm)
+          .then(() => {
+            contactForm.reset();
+            setContactStatus("contact.statusSuccess", "success");
+          })
+          .catch((error) => {
+            const detail = error && (error.text || error.message || error.status);
+            const message = detail
+              ? `${translations[document.documentElement.lang]["contact.statusError"]} (${detail})`
+              : "";
+            setContactStatus("contact.statusError", "error", message);
+            console.error("EmailJS error:", error);
+          });
+      });
+
+      applyTheme(savedTheme);
+      applyLanguage(savedLang);
+    </script>
   </body>
 </html>
